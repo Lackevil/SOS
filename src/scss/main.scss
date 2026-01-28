@@ -44,12 +44,6 @@
 
 .main {
   flex: 0 1 auto;
-  overflow-y: scroll;
-  scroll-snap-type: y proximity;
-}
-
-.main > section {
-  scroll-snap-align: start;
 }
 
 .overflow {
