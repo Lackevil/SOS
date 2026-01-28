@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta -->
+    <meta name="author" content="Nazar Pasechnyi" />
+    <meta
+      name="description"
+      content="Experience new social battle royale game."
+    />
+    <title>SOS</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/SOS/favicon.png" />
+    <script type="module" crossorigin src="/SOS/assets/index-CdeFTHIZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/SOS/assets/index-rq4j2Y44.css">
+  </head>
+  <body id="body">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="#" class="logo" aria-label="Home link">
+            <img
+              src="data:image/png;base64,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"
+              alt="Logo SOS"
+              width="55"
+              height="55"
+            />
+          </a>
+          <nav class="navigation navigation--mobile">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Main</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#features" class="navigation__link">Game features</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#requirements" class="navigation__link"
+                  >System requirements</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#quotes" class="navigation__link">Quotes</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="controls">
+            <ul class="controls__platforms controls-platforms">
+              <li class="controls-platforms__item">
+                <a
+                  target="_blank"
+                  href="https://www.xbox.com/"
+                  class="controls-platforms__link"
+                  aria-label="Game on Xbox"
+                >
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='31'%20height='30'%20viewBox='0%200%2031%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.92733%202.65335C11.5116%203.27457%2013.043%204.09504%2014.4864%205.09719C14.6507%205.20854%2014.8384%205.26714%2015.0262%205.26714C15.2139%205.26714%2015.4017%205.20854%2015.566%205.09719C17.0094%204.09504%2018.5408%203.26871%2020.1251%202.64749C20.483%202.50684%2020.7235%202.15521%2020.7177%201.76841C20.7177%201.38162%2020.4771%201.03585%2020.1133%200.901055C16.9449%20-0.300352%2013.1075%20-0.300352%209.94493%200.901055C9.58701%201.03585%209.34058%201.38748%209.34058%201.76841C9.34058%202.14935%209.56354%202.5127%209.92733%202.65335Z'%20fill='%23FFB548'%20/%3e%3cpath%20d='M23.5347%202.65867C23.2354%202.45355%2022.854%202.43597%2022.5313%202.61765C20.7769%203.62566%2019.0812%204.78018%2017.4794%206.05191C17.2681%206.22187%2017.1391%206.47387%2017.1273%206.74345C17.1156%207.01304%2017.2212%207.27676%2017.4148%207.4643C20.7358%2010.6231%2025.336%2020.3106%2026.3921%2024.7645C24.1038%2020.8966%2018.9991%2011.7952%2015.6604%208.68328C15.3025%208.34923%2014.7392%208.34923%2014.3813%208.68328C11.0368%2011.7952%205.94967%2020.9025%203.66134%2024.7763C4.71749%2020.3223%209.3059%2010.6231%2012.6269%207.4643C12.8264%207.27676%2012.932%207.01304%2012.9203%206.74345C12.9086%206.47387%2012.7795%206.22187%2012.5682%206.05191C10.9664%204.78018%209.26483%203.62566%207.5163%202.61765C7.20533%202.43597%206.8122%202.45355%206.51296%202.65867C2.43502%205.46586%200%2010.0781%200%2015.0009C0%2018.5993%201.29672%2022.0687%203.66134%2024.7763C6.48949%2028.0933%2010.6261%2030.0038%2015.0209%2030.0038C19.4157%2030.0038%2023.5581%2028.0992%2026.3921%2024.7704C28.745%2022.0746%2030.0417%2018.6051%2030.0417%2015.0009C30.0417%2010.0781%2027.6067%205.46586%2023.5347%202.65867Z'%20fill='%23FFB548'%20/%3e%3c/svg%3e"
+                    alt="Xbox"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+              <li class="controls-platforms__item">
+                <a
+                  target="_blank"
+                  href="https://store.playstation.com/"
+                  class="controls-platforms__link"
+                  aria-label="Game on Playstation"
+                >
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='31'%20height='30'%20viewBox='0%200%2031%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M15.0629%2030C23.382%2030%2030.1259%2023.2843%2030.1259%2015C30.1259%206.71573%2023.382%200%2015.0629%200C6.74391%200%200%206.71573%200%2015C0%2016.528%200.229436%2018.0027%200.655872%2019.3917C0.764691%2019.4112%200.940632%2019.4558%201.19699%2019.5306L0.79667%2013.258C0.79667%2013.1431%200.991427%2013.0878%201.16986%2013.0371C1.26779%2013.0093%201.3608%2012.9829%201.414%2012.9488C1.55927%2012.8573%204.55091%2013.9451%204.71072%2014.0173L8.53633%2015.7406C9.52421%2015.1196%2010.7058%2014.8693%2011.868%2015.0378L15.3449%2010.8163C15.3885%207.44684%2018.1488%204.732%2021.5434%204.72718C24.7153%204.76088%2027.3448%207.16765%2027.645%2010.3013C27.9646%2013.69%2025.4659%2016.6937%2022.0567%2017.0162L16.265%2021.1317C15.9115%2022.9368%2014.6137%2024.4146%2012.8607%2025.0018C10.1731%2025.9068%207.25305%2024.4723%206.3475%2021.796L4.333%2021.1317C4.18364%2021.0845%201.44219%2019.9488%200.699621%2019.5317C2.62884%2025.601%208.33001%2030%2015.0629%2030ZM24.6429%2010.8884C24.6429%2012.5898%2023.2553%2013.9691%2021.5436%2013.9691C19.8319%2013.9691%2018.4443%2012.5898%2018.4443%2010.8884C18.4443%209.18703%2019.8319%207.80776%2021.5436%207.80776C23.2553%207.80776%2024.6429%209.18703%2024.6429%2010.8884ZM23.6119%2010.8885C23.6119%2012.0236%2022.6861%2012.9438%2021.5441%2012.9438C20.4021%2012.9438%2019.4763%2012.0236%2019.4763%2010.8885C19.4763%209.75329%2020.4021%208.83307%2021.5441%208.83307C22.6861%208.83307%2023.6119%209.75329%2023.6119%2010.8885ZM9.86875%2022.9031C10.2852%2023.1053%2010.7452%2023.2112%2011.2101%2023.2112C11.5636%2023.2112%2011.9074%2023.1534%2012.2464%2023.0427C13.026%2022.7732%2013.6604%2022.21%2014.0187%2021.4735C14.7645%2019.938%2014.1156%2018.0992%2012.5757%2017.3579C12.3142%2017.2328%2012.0091%2017.3387%2011.8832%2017.5938C11.7573%2017.8537%2011.8638%2018.157%2012.1205%2018.2821C12.1544%2018.2966%2012.1883%2018.311%2012.2222%2018.3303C13.2391%2018.8501%2013.6313%2020.0872%2013.1083%2021.0981C12.5854%2022.1089%2011.336%2022.4988%2010.3239%2021.9789C10.0625%2021.8538%209.75738%2021.9597%209.63147%2022.2148C9.50557%2022.4747%209.6121%2022.778%209.86875%2022.9031Z'%20fill='%23FFB548'/%3e%3c/svg%3e"
+                    alt="Playstation"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+            </ul>
+            <button class="burger" aria-label="Burger Menu">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__container">
+            <h1 class="hero__title">SURVIVE AT ALL COSTS</h1>
+            <p class="hero__subtitle">
+              Experience new social battle royale game
+            </p>
+            <a href="#" class="hero__btn">Buy Now on Steam | $14.99</a>
+            <a href="#about" class="hero__scroll-btn" aria-label="Scroll down">
+              <span>THE STORY</span>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='23'%20height='11'%20viewBox='0%200%2023%2011'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.2544%201H1L11.0138%209.16912L21.2544%201Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3c/svg%3e"
+                alt="Arrow"
+                width="23"
+                height="11"
+              />
+            </a>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="about__container">
+            <div class="about__content">
+              <p class="about__pretitle">What is SOS?</p>
+              <h2 class="about__title">
+                social battle<br />
+                royale game
+              </h2>
+              <p class="about__description">
+                Each round, <span class="highlighted">you</span> and
+                <span class="highlighted">15</span> other contestants compete to
+                escape a deadly island filled with monsters. The trick is:
+                <span class="highlighted">three</span> people can survive. Will
+                you run solo or form friendships with others to escape?
+                <br /><br />
+                Making the right decisions could be the difference between
+                <span class="mount">life and death.</span>
+              </p>
+            </div>
+            <div class="about__slider">
+              <div class="slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/SOS/assets/slider-1-C13_rpBR.jpeg"
+                      width="502"
+                      height="610"
+                      alt="Slider 3"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/SOS/assets/slider-2-cZw-Pj08.jpeg"
+                      width="502"
+                      height="610"
+                      alt="Slider 3"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/SOS/assets/slider-3-BoN8Ec0Z.jpg"
+                      alt="Slider 3"
+                      width="502"
+                      height="610"
+                    />
+                  </div>
+                </div>
+                <div class="slider__pagination"></div>
+                <button class="slider__next">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='23'%20height='11'%20viewBox='0%200%2023%2011'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.2544%201H1L11.0138%209.16912L21.2544%201Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3c/svg%3e"
+                    alt="Arrow"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="features" id="features">
+          <div class="features__container">
+            <div class="features__inner">
+              <p class="features__pretitle">What’s so special?</p>
+              <h2 class="features__title">features</h2>
+              <div class="features__accordion accordion">
+                <div class="accordion__item active">
+                  <h3 class="accordion__title">SURVIVE AT ALL COSTS</h3>
+                  <p class="accordion__text">
+                    You have 30 minutes to find a relic, signal for extraction,
+                    and grab one of three spots on the rescue chopper.
+                  </p>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__title">CREATE ALLIES AND ENEMIES</h3>
+                  <p class="accordion__text">
+                    You have 30 minutes to find a relic, signal for extraction,
+                    and grab one of three spots on the rescue chopper.
+                  </p>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__title">IMPRESS THE AUDIENCE</h3>
+                  <p class="accordion__text">
+                    You have 30 minutes to find a relic, signal for extraction,
+                    and grab one of three spots on the rescue chopper.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="requirements" id="requirements">
+          <div class="requirements__container">
+            <p class="requirements__pretitle">Can My Computer Run this game?</p>
+            <h2 class="requirements__title">system requirements</h2>
+            <table class="requirements__table table">
+              <tr>
+                <td>
+                  <h3 class="table__title">OS:</h3>
+                  <p class="table__text">
+                    Windows 7 64-bit only (No OSX support at this time)
+                  </p>
+                </td>
+                <td>
+                  <h3 class="table__title">PROCESSOR:</h3>
+                  <p class="table__text">
+                    Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 class="table__title">MEMORY:</h3>
+                  <p class="table__text">8 GB RAM</p>
+                </td>
+                <td>
+                  <h3 class="table__title">STORAGE:</h3>
+                  <p class="table__text">8 GB available space</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h3 class="table__title">GRAPHICS:</h3>
+                  <p class="table__text">
+                    NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB
+                    DirectX11 (Shader Model 5)
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section class="quotes" id="quotes">
+          <div class="quotes__container">
+            <div class="quotes__description">
+              <p class="quotes__pretitle">What people think?</p>
+              <h2 class="quotes__title">Press quotes</h2>
+              <p class="quotes__text">
+                Our goal is to create a product and service that you’re
+                satisfied with and use it every day. This is why we’re
+                constantly working on our services to make it better every day
+                and really listen to what our users has to say.
+              </p>
+              <a href="#" class="quotes__btn">Read more testimonials</a>
+            </div>
+            <div class="quotes__content">
+              <article class="quote">
+                <header class="quote__header">
+                  <div class="quote__about">
+                    <img
+                      src="/SOS/assets/photo-1-CgWKo5Vy.png"
+                      alt="Photo 1"
+                      width="60"
+                      height="6"
+                    />
+                    <div class="quote__info">
+                      <p class="quote__name">Evan Lahti</p>
+                      <p class="quote__role">PC Gamer</p>
+                    </div>
+                  </div>
+                  <a href="#" class="quote__twitter">
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='21'%20height='16'%20viewBox='0%200%2021%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M21.008%201.895C20.235%202.217%2019.404%202.432%2018.533%202.53C19.423%202.03%2020.106%201.238%2020.428%200.296C19.594%200.758%2018.672%201.094%2017.69%201.276C16.905%200.49%2015.784%200%2014.545%200C12.165%200%2010.234%201.809%2010.234%204.039C10.234%204.356%2010.272%204.665%2010.346%204.96C6.764%204.791%203.588%203.183%201.462%200.74C1.091%201.337%200.879%202.03%200.879%202.771C0.879%204.171%201.64%205.409%202.796%206.133C2.09%206.111%201.426%205.93%200.844%205.627C0.844%205.645%200.844%205.66%200.844%205.679C0.844%207.636%202.329%209.268%204.301%209.639C3.94%209.731%203.558%209.779%203.166%209.779C2.888%209.779%202.618%209.755%202.355%209.709C2.903%2011.312%204.495%2012.481%206.381%2012.514C4.906%2013.597%203.048%2014.242%201.028%2014.242C0.68%2014.242%200.337%2014.223%200%2014.186C1.907%2015.331%204.173%2016.001%206.607%2016.001C14.535%2016.001%2018.87%209.845%2018.87%204.508C18.87%204.332%2018.865%204.159%2018.857%203.985C19.699%203.415%2020.43%202.704%2021.008%201.895Z'%20fill='%231DA1F2'/%3e%3c/svg%3e"
+                      alt="Twitter"
+                      width="18"
+                      height="14"
+                    />
+                  </a>
+                </header>
+                <p class="quote__text">
+                  “One of my gaming highlights of the year.”
+                </p>
+                <p class="quote__date">October 18, 2018</p>
+              </article>
+              <article class="quote">
+                <header class="quote__header">
+                  <div class="quote__about">
+                    <img
+                      src="/SOS/assets/photo-2-BXuC93_N.png"
+                      alt="Photo 1"
+                      width="60"
+                      height="6"
+                    />
+                    <div class="quote__info">
+                      <p class="quote__name">Jada Griffin</p>
+                      <p class="quote__role">Nerdreactor</p>
+                    </div>
+                  </div>
+                  <a href="#" class="quote__twitter">
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='21'%20height='16'%20viewBox='0%200%2021%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M21.008%201.895C20.235%202.217%2019.404%202.432%2018.533%202.53C19.423%202.03%2020.106%201.238%2020.428%200.296C19.594%200.758%2018.672%201.094%2017.69%201.276C16.905%200.49%2015.784%200%2014.545%200C12.165%200%2010.234%201.809%2010.234%204.039C10.234%204.356%2010.272%204.665%2010.346%204.96C6.764%204.791%203.588%203.183%201.462%200.74C1.091%201.337%200.879%202.03%200.879%202.771C0.879%204.171%201.64%205.409%202.796%206.133C2.09%206.111%201.426%205.93%200.844%205.627C0.844%205.645%200.844%205.66%200.844%205.679C0.844%207.636%202.329%209.268%204.301%209.639C3.94%209.731%203.558%209.779%203.166%209.779C2.888%209.779%202.618%209.755%202.355%209.709C2.903%2011.312%204.495%2012.481%206.381%2012.514C4.906%2013.597%203.048%2014.242%201.028%2014.242C0.68%2014.242%200.337%2014.223%200%2014.186C1.907%2015.331%204.173%2016.001%206.607%2016.001C14.535%2016.001%2018.87%209.845%2018.87%204.508C18.87%204.332%2018.865%204.159%2018.857%203.985C19.699%203.415%2020.43%202.704%2021.008%201.895Z'%20fill='%231DA1F2'/%3e%3c/svg%3e"
+                      alt="Twitter"
+                      width="18"
+                      height="14"
+                    />
+                  </a>
+                </header>
+                <p class="quote__text">
+                  “The next big thing in the world of streaming and survival
+                  games.”
+                </p>
+                <p class="quote__date">December 21, 2018</p>
+              </article>
+              <article class="quote">
+                <header class="quote__header">
+                  <div class="quote__about">
+                    <img
+                      src="/SOS/assets/photo-3-8IkPglAe.png"
+                      alt="Photo 1"
+                      width="60"
+                      height="6"
+                    />
+                    <div class="quote__info">
+                      <p class="quote__name">Aaron Williams</p>
+                      <p class="quote__role">Uproxx</p>
+                    </div>
+                  </div>
+                  <a href="#" class="quote__twitter">
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='21'%20height='16'%20viewBox='0%200%2021%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M21.008%201.895C20.235%202.217%2019.404%202.432%2018.533%202.53C19.423%202.03%2020.106%201.238%2020.428%200.296C19.594%200.758%2018.672%201.094%2017.69%201.276C16.905%200.49%2015.784%200%2014.545%200C12.165%200%2010.234%201.809%2010.234%204.039C10.234%204.356%2010.272%204.665%2010.346%204.96C6.764%204.791%203.588%203.183%201.462%200.74C1.091%201.337%200.879%202.03%200.879%202.771C0.879%204.171%201.64%205.409%202.796%206.133C2.09%206.111%201.426%205.93%200.844%205.627C0.844%205.645%200.844%205.66%200.844%205.679C0.844%207.636%202.329%209.268%204.301%209.639C3.94%209.731%203.558%209.779%203.166%209.779C2.888%209.779%202.618%209.755%202.355%209.709C2.903%2011.312%204.495%2012.481%206.381%2012.514C4.906%2013.597%203.048%2014.242%201.028%2014.242C0.68%2014.242%200.337%2014.223%200%2014.186C1.907%2015.331%204.173%2016.001%206.607%2016.001C14.535%2016.001%2018.87%209.845%2018.87%204.508C18.87%204.332%2018.865%204.159%2018.857%203.985C19.699%203.415%2020.43%202.704%2021.008%201.895Z'%20fill='%231DA1F2'/%3e%3c/svg%3e"
+                      alt="Twitter"
+                      width="18"
+                      height="14"
+                    />
+                  </a>
+                </header>
+                <p class="quote__text">
+                  “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                  Ridiculous.”
+                </p>
+                <p class="quote__date">December 24, 2018</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="newsletter">
+          <div class="newsletter__container">
+            <div class="newsletter__inner">
+              <p class="newsletter__pretitle">Want to stay in touch?</p>
+              <h2 class="newsletter__title">newsletter SUBSCRIBE</h2>
+              <p class="newsletter__text">
+                In order to start receiving our news, all you have to do is
+                enter your email address. Everything else will be taken care of
+                by us. We will send you emails containing information about
+                game. We don’t spam.
+              </p>
+              <form action="#" class="newsletter__form form">
+                <input
+                  type="email"
+                  class="form__email"
+                  placeholder="Your email address"
+                />
+                <input
+                  class="form__submit"
+                  type="submit"
+                  value="Subscribe now"
+                />
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__links">
+            <a href="#" class="footer__logo"
+              ><img
+                src="/SOS/assets/logo-big-CLgNLHSS.png"
+                alt="Logo"
+                width="90"
+                height="90"
+            /></a>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Main</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#about" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#features" class="navigation__link">Game features</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#requirements" class="navigation__link"
+                    >System requirements</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a href="#quotes" class="navigation__link">Quotes</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="footer__social-list social-list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='10'%20height='19'%20viewBox='0%200%2010%2019'%20fill='%23'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.136%2018.989H2.045V9.495H0V6.222H2.045V4.258C2.045%201.589%203.2%200%206.478%200H9.208V3.273H7.503C6.225%203.273%206.141%203.731%206.141%204.585L6.136%206.222H9.228L8.866%209.495H6.136V18.989Z'%20fill='%233b5998'/%3e%3c/svg%3e"
+                    alt="Facebook"
+                    width="9"
+                    height="18"
+                  />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='21'%20height='16'%20viewBox='0%200%2021%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M21.008%201.895C20.235%202.217%2019.404%202.432%2018.533%202.53C19.423%202.03%2020.106%201.238%2020.428%200.296C19.594%200.758%2018.672%201.094%2017.69%201.276C16.905%200.49%2015.784%200%2014.545%200C12.165%200%2010.234%201.809%2010.234%204.039C10.234%204.356%2010.272%204.665%2010.346%204.96C6.764%204.791%203.588%203.183%201.462%200.74C1.091%201.337%200.879%202.03%200.879%202.771C0.879%204.171%201.64%205.409%202.796%206.133C2.09%206.111%201.426%205.93%200.844%205.627C0.844%205.645%200.844%205.66%200.844%205.679C0.844%207.636%202.329%209.268%204.301%209.639C3.94%209.731%203.558%209.779%203.166%209.779C2.888%209.779%202.618%209.755%202.355%209.709C2.903%2011.312%204.495%2012.481%206.381%2012.514C4.906%2013.597%203.048%2014.242%201.028%2014.242C0.68%2014.242%200.337%2014.223%200%2014.186C1.907%2015.331%204.173%2016.001%206.607%2016.001C14.535%2016.001%2018.87%209.845%2018.87%204.508C18.87%204.332%2018.865%204.159%2018.857%203.985C19.699%203.415%2020.43%202.704%2021.008%201.895Z'%20fill='%231DA1F2'/%3e%3c/svg%3e"
+                    alt="Twitter"
+                    width="21"
+                    height="16"
+                  />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='25'%20height='18'%20viewBox='0%200%2025%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.8102%200H5.1898C2.32646%200%200%202.36726%200%205.28081V12.7137C0%2015.6327%202.32646%2017.9945%205.1898%2017.9945H19.8048C22.6735%2017.9945%2024.9946%2015.6272%2024.9946%2012.7137V5.28081C25%202.36726%2022.6735%200%2019.8102%200ZM16.2961%209.36419L9.4577%2012.6806C9.27332%2012.7689%209.06725%2012.6364%209.06725%2012.4267V5.5843C9.06725%205.37462%209.28417%205.24218%209.46312%205.33599L16.3015%208.86205C16.5076%208.96689%2016.5022%209.26487%2016.2961%209.36419Z'%20fill='%23cd201f'/%3e%3c/svg%3e"
+                    alt="Youtube"
+                    width="25"
+                    height="18"
+                  />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='20'%20height='19'%20viewBox='0%200%2020%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M19.1489%2012.9451V8.87363V0H2.12766L0%202.2967V14.4066H5.31915V18.1648H7.65957L10.2128%2015.4506H16.5957L19.1489%2012.9451ZM6.59566%2012.7363H3.1914C2.95736%2012.7363%202.76587%2012.5484%202.76587%2012.3188V2.08799C2.76587%201.85832%202.95736%201.67041%203.1914%201.67041H16.8084C17.0425%201.67041%2017.234%201.85832%2017.234%202.08799V10.0221C17.234%2010.1369%2017.1914%2010.2413%2017.1116%2010.3196L14.7712%2012.6163C14.6914%2012.6946%2014.5797%2012.7363%2014.468%2012.7363H10.5584L7.26055%2014.96C7.1914%2015.0069%207.10629%2015.033%207.02119%2015.033C6.95204%2015.033%206.88821%2015.0174%206.82438%2014.9861C6.68076%2014.913%206.59566%2014.7721%206.59566%2014.6155V12.7363Z'%20fill='%236441A4'/%3e%3cpath%20d='M12.9787%209.08256V4.90674H11.2766V9.08256H12.9787ZM8.72337%209.08256V4.90674H7.02124V9.08256H8.72337Z'%20fill='%236441A4'/%3e%3c/svg%3e"
+                    alt="Twitch"
+                    width="19"
+                    height="18"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <p class="footer__copyright">
+              © 2018 Outpost Games, Inc. All Rights Reserved
+            </p>
+            <ul class="footer__info-links info-links">
+              <li class="info-links__item">
+                <a href="#" class="info-links__link">Privacy Policy</a>
+              </li>
+              <li class="info-item">
+                <a href="#" class="info-links__link">Terms of Services</a>
+              </li>
+              <li class="info-item">
+                <a href="#" class="info-links__link">Code of Conduct</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
