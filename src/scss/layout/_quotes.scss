@@ -1,0 +1,67 @@
+// -------- Quotes --------
+
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.quotes {
+  background: url(../../assets/images/quotes-bg.jpg) top center / cover
+    no-repeat;
+  padding: 3.5rem 0;
+  height: 100%;
+
+  @media ($tablet) {
+    padding: 0;
+    height: 100vh;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+
+    @media ($tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__description {
+    flex: initial;
+
+    @media ($tablet) {
+      flex: 0 1 43.7rem;
+    }
+  }
+
+  &__pretitle {
+    @include title2;
+  }
+
+  &__title {
+    @include title1();
+    margin-bottom: 2.5rem;
+
+    @media ($tablet) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__text {
+    @extend %text;
+    margin-bottom: 4rem;
+  }
+
+  &__btn {
+    @include btn;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+// -------- Quotes --------

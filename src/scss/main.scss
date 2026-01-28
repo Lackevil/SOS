@@ -1,0 +1,59 @@
+// -------- Main --------
+
+// Imports
+
+@use 'base/reset';
+@use 'base/fonts';
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+@use 'layout/header';
+@use 'layout/hero';
+@use 'layout/about';
+@use 'layout/features';
+@use 'layout/requirements';
+@use 'layout/quotes';
+@use 'layout/newsletter';
+@use 'layout/footer';
+
+@use 'components/logo';
+@use 'components/navigation';
+@use 'components/controls';
+@use 'components/burger';
+@use 'components/slider';
+@use 'components/accordion';
+@use 'components/table';
+@use 'components/quote';
+@use 'components/form';
+@use 'components/social';
+
+// General
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+[class*='__container'] {
+  max-width: calc(119.9rem + 1.5rem);
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 0 1 auto;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+
+.main > section {
+  scroll-snap-align: start;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+// -------- Main --------

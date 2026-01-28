@@ -1,0 +1,96 @@
+// -------- Quote --------
+
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.quote {
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  width: 100%;
+
+  @media ($tablet) {
+    width: clamp(35rem, 50vw, 45rem);
+  }
+
+  &:nth-of-type(2) {
+    position: static;
+
+    @media ($tablet) {
+      position: relative;
+      right: clamp(0rem, 5vw, 10rem);
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.6rem;
+  }
+
+  &__about {
+    display: flex;
+    gap: 3rem;
+
+    & > img {
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      max-width: 7rem;
+      height: auto;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__name {
+    @include title2($primary);
+    margin-bottom: 0.5rem;
+
+    @media ($tablet) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__role {
+    @include title2();
+    opacity: 0.5;
+    font-weight: 400;
+    font-family: $secondary-font;
+    letter-spacing: 0;
+
+    @media ($tablet) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__twitter {
+    align-self: flex-start;
+    opacity: 0.5;
+    filter: saturate(0);
+    transition: 0.2s ease-in-out opacity;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    @extend %text;
+    margin-bottom: 1rem;
+  }
+
+  &__date {
+    opacity: 0.5;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: $secondary-font;
+  }
+}
+
+// -------- Quote --------

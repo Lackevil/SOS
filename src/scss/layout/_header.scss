@@ -1,0 +1,23 @@
+// -------- Header --------
+
+@use '../base/variables' as *;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+  width: 100%;
+
+  @media ($tablet) {
+    padding: 2.1rem 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// -------- Header --------

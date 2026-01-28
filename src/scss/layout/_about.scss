@@ -1,0 +1,93 @@
+// -------- About --------
+
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.about {
+  background: url(../../assets/images/about-bg.webp) center / cover no-repeat;
+  padding: 1.9rem 0;
+  height: auto;
+
+  @media ($tablet) {
+    height: 100vh;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 100%;
+
+    @media ($tablet) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2.8rem;
+    }
+  }
+
+  &__content {
+    flex: initial;
+
+    @media ($tablet) {
+      flex: 1 1 50%;
+    }
+  }
+
+  &__pretitle {
+    @include title2;
+  }
+
+  &__title {
+    @include title1;
+    position: relative;
+    margin-bottom: 4.5rem;
+
+    @media ($tablet) {
+      margin-bottom: 7rem;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -2rem;
+      left: 0;
+      z-index: 2;
+      border-radius: 0.4rem;
+      background: $white;
+      width: 71rem;
+      height: 0.2rem;
+      content: '';
+    }
+  }
+
+  &__description {
+    @extend %text;
+    margin-left: auto;
+    max-width: 90%;
+
+    @media ($tablet) {
+      max-width: 36.4rem;
+    }
+
+    & > span.mount {
+      @extend %mount;
+    }
+  }
+
+  &__slider {
+    flex: 1 1 auto;
+    max-height: auto;
+
+    @media ($tablet) {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+.highlighted {
+  @extend %highlighted;
+}
+
+// -------- About --------

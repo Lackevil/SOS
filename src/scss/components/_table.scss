@@ -1,0 +1,29 @@
+// -------- Table --------
+
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.table {
+  border-collapse: collapse;
+  max-width: 57.3rem;
+
+  & td {
+    border: 0.1rem solid #333333;
+    padding: 1rem 1rem 3rem;
+
+    @media ($tablet) {
+      padding: 2rem 2rem 4rem;
+    }
+  }
+
+  &__title {
+    @include title2($primary);
+    margin-bottom: 0.7rem;
+  }
+
+  &__text {
+    @extend %text;
+  }
+}
+
+// -------- Table --------

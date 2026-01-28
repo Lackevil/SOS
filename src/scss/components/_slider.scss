@@ -1,0 +1,73 @@
+// -------- Slider --------
+
+@use '../base/variables' as *;
+
+.slider {
+  position: relative;
+  border-radius: 0.6rem;
+  height: auto;
+
+  @media ($tablet) {
+    max-width: 50rem;
+  }
+
+  .swiper-slide {
+    max-width: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    border-radius: 0.6rem;
+    width: 100%;
+    max-height: 35rem;
+    object-fit: cover;
+
+    @media ($tablet) {
+      max-width: 50.2rem;
+      max-height: 60.1rem;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    gap: 3rem;
+    transform: translateY(-2rem);
+    z-index: 10;
+  }
+
+  .swiper-pagination-bullet {
+    opacity: 1;
+    border: 0.2rem solid $white;
+    background: none;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+
+  &__next {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%) rotate(270deg);
+    z-index: 100;
+    cursor: pointer;
+    border: none;
+    width: 3.4rem;
+    height: 1.3rem;
+    pointer-events: all;
+
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// -------- Slider --------

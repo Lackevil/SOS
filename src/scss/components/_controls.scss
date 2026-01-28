@@ -1,0 +1,41 @@
+// -------- Controls --------
+
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.controls {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 2.7rem;
+  z-index: 3;
+
+  @media ($desktop) {
+    gap: 4.7rem;
+  }
+
+  // &__lang-switcher {
+  // }
+
+  // &__platforms {
+  // }
+}
+
+.controls-platforms {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+
+  // &__item {
+  // }
+
+  &__link {
+    transition: 0.2s ease-in-out filter;
+
+    &:hover {
+      filter: brightness(1.4) saturate(0);
+    }
+  }
+}
+
+// -------- Controls --------

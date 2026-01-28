@@ -1,0 +1,56 @@
+// -------- About --------
+
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.requirements {
+  position: relative;
+  background: url(../../assets/images/requirements-bg.jpg) 90% 10% / cover
+    no-repeat;
+  height: 100vh;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    content: '';
+
+    @media ($tablet) {
+      display: none;
+    }
+  }
+
+  @media ($tablet) {
+    padding: 10.5rem 0;
+  }
+
+  &__container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+    height: 100%;
+  }
+
+  &__pretitle {
+    @include title2;
+    text-align: center;
+  }
+
+  &__title {
+    @include title1;
+    margin-bottom: 7.5rem;
+    text-align: center;
+
+    @media ($tablet) {
+      margin-bottom: 8.3rem;
+    }
+  }
+}
+
+// -------- About --------

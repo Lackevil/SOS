@@ -1,0 +1,27 @@
+// -------- Social --------
+
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+
+  // &__item {
+  // }
+
+  &__link {
+    & > img {
+      filter: saturate(0) brightness(3);
+      transition: 0.2s ease-in-out filter;
+    }
+
+    &:hover img {
+      filter: none;
+    }
+  }
+}
+
+// -------- Social --------

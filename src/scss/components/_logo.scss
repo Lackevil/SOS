@@ -1,0 +1,21 @@
+// -------- Logo --------
+
+@use '../base/variables' as *;
+
+.logo {
+  position: relative;
+  z-index: 4;
+
+  & > img {
+    display: block;
+    width: 100%;
+    max-width: 3.2rem;
+    height: auto;
+
+    @media ($tablet) {
+      max-width: initial;
+    }
+  }
+}
+
+// -------- Logo --------
